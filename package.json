@@ -1,16 +1,16 @@
 {
-  "name": "dotenv-action",
+  "name": "dotenv-action-sm",
   "version": "1.0.0",
   "description": "Load variables from a .env file",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "package": "ncc build -m index.js --minify --v8-cache",
+    "build": "ncc build -m index.js --minify --v8-cache",
     "test": "eslint index.js && jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falti/dotenv-action.git"
+    "url": "git+https://github.com/sammcj/dotenv-action.git"
   },
   "keywords": [
     "GitHub",
@@ -20,16 +20,16 @@
   "author": "GitHub",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/falti/dotenv-action/issues"
+    "url": "https://github.com/sammcj/dotenv-action/issues"
   },
-  "homepage": "https://github.com/falti/dotenv-action#readme",
+  "homepage": "https://github.com/sammcj/dotenv-action#readme",
   "dependencies": {
     "@actions/core": "^1.10",
     "dotenv": "^16.0.3",
-    "dotenv-expand": "^9.0.0"
+    "dotenv-expand": "^9.0.0",
+    "@vercel/ncc": "^0.34.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3",
     "eslint": "^8.28.0",
     "jest": "^29.3.1"
   }
